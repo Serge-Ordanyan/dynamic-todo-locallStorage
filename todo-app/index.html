@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: rgba(8, 99, 116, 0.048);
+        }
+
+        .nav__link{
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            createTodoApp(document.getElementById('list-1'),'list ①',key = 'list-1');
+        })
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <a class="nav__link" href="#">First list ❶</a>
+
+            <a class="nav__link" href="list-2.html">Second list ❷</a>
+
+            <a class="nav__link" href="list-2.html">Third list ❸</a>
+        </nav>
+    </div>
+
+    <div id="list-1" class="container">
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="localStorage.js"></script>
+</body>
+</html>
